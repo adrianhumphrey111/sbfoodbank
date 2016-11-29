@@ -30,7 +30,7 @@ public class SampleTests {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		if(testLocal){
-			addresses.add("http://localhost:8080");
+			addresses.add("http://localhost:8080/ally");
 		}
 		if(testProduction){
 			addresses.add("http://djp3.westmont.edu/ally/ally/");
@@ -38,7 +38,6 @@ public class SampleTests {
 		if(testStaging){
 			addresses.add("http://djp3.westmont.edu/ally_staging/ally/");
 		}
-		
 		System.setProperty("webdriver.chrome.driver", "../chromedriver");
         // Create a new instance of the Google driver
         // Notice that the remainder of the code relies on the interface, 
@@ -57,6 +56,28 @@ public class SampleTests {
 
 	@After
 	public void tearDown() throws Exception {
+	}
+	
+	@Test
+	public void testAboutButton(){
+		//open web page
+		if(testLocal){
+			driver.get("http://localhost:8080/ally");
+		}
+		else{
+			//Test Production code about button press
+			driver.get("http://djp3.westmont.edu/ally/ally/");
+		}
+		
+		//set the driver for the about button
+		WebElement element = driver.findElement(By.name("About_Button"));
+		
+		//Click About button
+		element.click();
+
+		
+		// Check the title of the page
+        assertTrue(driver.getTitle().equals("Ally - About"));
 	}
 	
 	@Test
