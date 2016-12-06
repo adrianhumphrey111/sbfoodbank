@@ -61,19 +61,37 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row-fluid text-center border-row">
+		<div id="test" class="container">
+			<script language="jquery" type="text/jquery">
+				var scrt_var = 10; 
+				var location1 = $("#location").val();
+
+				//var address = ""
+				//var dates = ""
+			</script>
+			<p id="test">Why is this not working</p>
+			<a class="btn pull-right btn-lg" href="share.html" onclick="location.href=this.href+'?key='+scrt_var+'&location='+location1;return false;" role="button">
+						<span class="glyphicon glyphicon-share" aria-hidden="true"></span>
+						Share
+						</a>
+			<div id="containerInfo" class="row-fluid text-center border-row">
+				<!--<a class"btn pull-right" href="share.html" onclick="location.href=this.href+'?key='+scrt_var;return false;">Link</a>-->
 				<div class="col-md-4">
-					<p>Catholic Charities (SB)</p>
+					<p id="location" >Catholic Charities (SB)</p>
 				</div>
 				<div class="col-md-4">
-					<p>609 E Haley St, Santa Barbara, CA 93103</p>
+					<p id="address">609 E Haley St, Santa Barbara, CA 93103</p>
 				</div>
+
 				<div class="col-md-4">
-					<p>Monday - Friday</p>
-					<p>9:00AM - 4:30PM</p>
+					<p id="dates">Monday - Friday</p>
+					<p id="times">9:00AM - 4:30PM</p>
+
 				</div>
+				
 			</div>
+
+
 		</div>
 
 		<div class="container">

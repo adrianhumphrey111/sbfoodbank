@@ -23,5 +23,6 @@ test/selenium_workspace/.metadata/.log
 test/selenium_workspace/.metadata/.mylyn
 test/selenium_workspace/.metadata/.plugins
 test/selenium_workspace/.recommenders
+test/chromedriver
 
 
