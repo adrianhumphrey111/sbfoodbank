@@ -14,7 +14,7 @@
 	<body>
 		<div class="container">
 			<div class="page-header">
-				<h1>Ally <small>Feedback</small></h1>
+				<h3>Feedback</h3>
 			</div>
 		</div>
 		<div class="container text-center">
@@ -44,9 +44,9 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row-fluid text-center">
-					<div class="col-sm-12">
-						<a class="btn btn-default btn-lg" href="index.html" role="button">
-							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+					<div class="col-xs-12">
+						<a class="btn btn-default btn-lg" href="index.php" role="button">
+							<img class="bw_logo_button" src="img/\logos\black_and_white\black_on_clear.png"/>
 							Home
 						</a>
 					</div>

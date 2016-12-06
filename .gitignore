@@ -1,7 +1,8 @@
 #Individual workspace settings
 .editorconfig
+version.ini
 
-#Temporary editor buffers for vi
+#Temporaryteditor buffers for vi
 *.swp
 
 #Ignore files from someone's local machine
@@ -18,11 +19,16 @@ test/selenium_suite/.metadata/.lock
 test/selenium_suite/.metadata/.log
 test/selenium_suite/.metadata/.mylyn
 test/selenium_suite/.metadata/.plugins
+test/selenium_suite/.metadata/version.ini
 test/selenium_workspace/.metadata/.lock
 test/selenium_workspace/.metadata/.log
 test/selenium_workspace/.metadata/.mylyn
 test/selenium_workspace/.metadata/.plugins
 test/selenium_workspace/.recommenders
+<<<<<<< HEAD
 test/chromedriver
+=======
+test/selenium_workspace/.metadata/version.ini
+>>>>>>> e4d54a8eca52394fa02b6b94d716eaf568eb0d8c
 
 

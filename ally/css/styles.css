@@ -20,3 +20,13 @@ body {
   background-color:rgb(250,250,250);
 }
 
+img.bw_logo{
+	width:50px;
+	padding:0px;
+}
+
+img.bw_logo_button{
+	width:25px;
+	padding:0px;
+}
+
